@@ -2,32 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
+@layer base {
+
+  /* light theme  */
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* foreground colors */
+    --foreground-100: rgba(28, 28, 28, 1);
+    --foreground-80: rgba(28, 28, 28, 0.8);
+    --foreground-60: rgba(28, 28, 28, 0.6);
+    --foreground-40: rgba(28, 28, 28, 0.4);
+    --foreground-20: rgba(28, 28, 28, 0.2);
+    --foreground-10: rgba(28, 28, 28, 0.1);
+    --foreground-5: rgba(28, 28, 28, 0.05);
+
+    /* background colors  */
+    --background-100: rgba(255, 255, 255, 1);
+    --background-80: rgba(255, 255, 255, 0.8);
+    --background-60: rgba(255, 255, 255, 0.6);
+    --background-40: rgba(255, 255, 255, 0.4);
+    --background-20: rgba(255, 255, 255, 0.2);
+    --background-10: rgba(255, 255, 255, 0.1);
+    --background-5: rgba(255, 255, 255, 0.05);
+
+    /* primary colors  */
+    --primary: rgba(28, 28, 28, 1);
+    --primary-blue: rgba(227, 245, 255, 1);
+    --primary-Purple: rgba(229, 236, 246, 1);
+    --primary-purple-50: rgba(229, 236, 246, 0.5);
+    --primary-light: rgba(247, 249, 251, 1);
+
+    /* secondary colors  */
+    --indigo: rgba(149, 164, 252, 1);
+    --purple: rgba(198, 199, 248, 1);
+    --cyan: rgba(168, 197, 218, 1);
+    --blue: rgba(177, 227, 255, 1);
+    --green: rgba(161, 227, 203, 1);
+    --mint: rgba(186, 237, 189, 1);
+    --yellow: rgba(255, 233, 153, 1);
+    --orange: rgba(255, 203, 131, 1);
+    --red: rgba(255, 71, 71, 1);
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  /* dark theme  */
+  .dark {
+    /* foreground colors */
+    --foreground-100: rgba(255, 255, 255, 1);
+    --foreground-80: rgba(255, 255, 255, 0.8);
+    --foreground-60: rgba(255, 255, 255, 0.6);
+    --foreground-40: rgba(255, 255, 255, 0.4);
+    --foreground-20: rgba(255, 255, 255, 0.2);
+    --foreground-10: rgba(255, 255, 255, 0.1);
+    --foreground-5: rgba(255, 255, 255, 0.05);
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    /* background colors  */
+    --background-100: rgba(28, 28, 28, 1);
+    --background-80: rgba(28, 28, 28, 0.8);
+    --background-60: rgba(28, 28, 28, 0.6);
+    --background-40: rgba(28, 28, 28, 0.4);
+    --background-20: rgba(28, 28, 28, 0.2);
+    --background-10: rgba(28, 28, 28, 0.1);
+    --background-5: rgba(28, 28, 28, 0.05);
+
+    /* primary colors  */
+    --primary: rgba(198, 199, 248, 1);
+    --primary-blue: rgba(227, 245, 255, 1);
+    --primary-Purple: rgba(229, 236, 246, 1);
+    --primary-purple-50: rgba(255, 255, 255, 0.05);
+    --primary-light: rgba(255, 255, 255, 0.05);
+
+    /* secondary colors  */
+    --indigo: rgba(149, 164, 252, 1);
+    --purple: rgba(198, 199, 248, 1);
+    --cyan: rgba(168, 197, 218, 1);
+    --blue: rgba(177, 227, 255, 1);
+    --green: rgba(161, 227, 203, 1);
+    --mint: rgba(186, 237, 189, 1);
+    --yellow: rgba(255, 233, 153, 1);
+    --orange: rgba(255, 203, 131, 1);
+    --red: rgba(255, 71, 71, 1);
   }
 }
