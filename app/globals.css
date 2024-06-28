@@ -82,4 +82,9 @@
     --orange: rgba(255, 203, 131, 1);
     --red: rgba(255, 71, 71, 1);
   }
+
+  *{
+    @apply m-0 p-0 box-border text-foreground-100 leading-normal
+  }
+  
 }

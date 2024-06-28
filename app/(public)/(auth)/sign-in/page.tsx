@@ -1,8 +1,10 @@
+import { SignIn } from "@/components/pages";
+
 const SignInPage = () => {
     return (
-        <main>
-            signin
-        </main>
+        <>
+            <SignIn />
+        </>
     );
 };
 
